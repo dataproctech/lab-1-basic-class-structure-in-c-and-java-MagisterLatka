@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3KfufTqw)
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=16301049)
 # Laboratorium 1: Podstawowa Struktura Klasy w C++ i Java
 
 ## Przegląd
@@ -16,6 +18,8 @@ Pod koniec tego laboratorium będziesz w stanie:
 - Zapoznać się z IDE dla C++ i Java.
 
 ## Instrukcje
+
+## Zadanie 1: 
 
 ### Część 1: Implementacja w C++
 
@@ -61,8 +65,70 @@ Pod koniec tego laboratorium będziesz w stanie:
 
 Po ukończeniu zadań, zastanów się nad następującymi pytaniami:
   1. Dlaczego ważne jest używanie specyfikatorów dostępu private dla atrybutów?
+
+      Ponieważ nie chcemy dopuścić by każdy miał dostęp do atrybutów i modyfikował je dowolnie.
+
   2. Co się stanie, jeśli zmienisz specyfikator dostępu atrybutów na public? Spróbuj to zrobić i zaobserwuj zmiany.
+
+      Nie będzie żadnych zmian w działaniu obecnego programu, jednak mógłbym z poziomu funkcji main dowolnie zmieniać te atrybuty.
+
   3. Czy możesz utworzyć wiele obiektów klasy Car? Jeśli tak, jak każdy obiekt przechowuje swoje własne atrybuty?
 
+      Tak, mogę. Każdy obiekt ma własną wersję swoich atrybutów.
+
+## Zadanie 2: Dodanie metod i obliczanie atrybutów
+
+### Zadanie C++ 
+### Cel:
+Rozszerz klasę `Car`, dodając nowe atrybuty oraz metodę do obliczania wieku samochodu.
+
+   1. Zmodyfikuj klasę `Car`, dodając:
+      Atrybut `int currentYear` reprezentujący obecny rok.
+   2. Dodaj metodę:
+      `int getCarAge()`, która oblicza i zwraca wiek samochodu na podstawie różnicy między `currentYear` a rokiem produkcji samochodu (`year`).
+   3. Zaktualizuj funkcję `main()`:
+      Utwórz obiekt klasy `Car`.
+      Wywołaj `getCarAge()` i wyświetl wiek samochodu.
+      
+### Zadanie Java 
+### Cel:
+Rozszerz klasę `Car`, dodając metodę do obliczania wieku samochodu.
+
+   1. Zmodyfikuj klasę `Car`, dodając:
+      Atrybut `int currentYear` reprezentujący obecny rok.
+   2. Dodaj metodę:
+      `int getCarAge()`, która oblicza i zwraca wiek samochodu na podstawie różnicy między `currentYear` a rokiem produkcji samochodu (`year`).
+   3. Zaktualizuj metodę `main()`:
+      Utwórz obiekt klasy `Car`.
+      Wywołaj `getCarAge()` i wyświetl wiek samochodu.
+      
+## Zadanie 3: Porównywanie obiektów (sprawdzanie równości)
+
+### Zadanie C++ 
+### Cel:
+Dodaj funkcjonalność, która porównuje dwa obiekty `Car` i sprawdza, czy są takie same (na podstawie `make`, `model` oraz `year`).
+   1. Dodaj metodę:
+      `bool isSameCar(Car otherCar)`, która porównuje make, model i year dwóch obiektów klasy `Car` i zwraca `true`, jeśli są takie same, w przeciwnym razie `false`.
+   2. Zaktualizuj funkcję `main()`:
+      Utwórz dwa obiekty klasy `Car`.
+      Wywołaj metodę `isSameCar()` i sprawdź, czy dwa samochody są takie same, a następnie wyświetl wynik.
+      
+### Zadanie Java 
+### Cel:
+Dodaj funkcjonalność, która porównuje dwa obiekty `Car` i sprawdza, czy są takie same (na podstawie `make`, `model` oraz `year`).
+   1. Dodaj metodę:
+      `boolean isSameCar(Car otherCar)`, która porównuje `make`, `model` i `year` dwóch obiektów klasy `Car` i zwraca `true`, jeśli są takie same, w przeciwnym razie `false`.
+   2. Zaktualizuj metodę `main()`:
+      Utwórz dwa obiekty klasy `Car`.
+      Wywołaj metodę `isSameCar()` i sprawdź, czy dwa samochody są takie same, a następnie wyświetl wynik.
+      
+## Zadanie 4:
+
+Wykonaj zadanie krok po kroku w C++ i Javie (utwórz dwa nowe pliki dla tego zadania):
+   1. Zbuduj klasę `Parrot`, która potrafi wypowiadać frazę, która jest predefiniowana w opisie klasy (metoda `say`).
+   2. Zmodyfikuj klasę z zadania `1.` tak, aby fraza była ustawiana podczas tworzenia konkretnej instancji.
+   3. Zmodyfikuj klasę z zadania `2.` tak, aby fraza mogła być zmieniana podczas działania programu.
+   4. Zmodyfikuj klasę z zadania `3.` tak, aby można było określić liczbę powtórzeń podczas wywoływania metody say.
+   5. Zmodyfikuj klasę z zadania `4.` tak, aby można było dodawać frazy do zbioru fraz, które zna papuga. Gdy wywoływana jest metoda `say`, papuga wypowiada losową frazę ze swojego zbioru.
 
 
